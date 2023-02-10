@@ -1,0 +1,63 @@
+.thali {
+  background-color: rgb(10, 10, 11);
+  width:50%;
+  height: auto;
+  display: flex;
+  margin:5vh auto;
+  border-radius: 2rem 0rem 2rem 0rem;
+}
+.thali main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.thali main div{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+  box-shadow:0rem 0rem 0.5rem 0rem rgb(249, 247, 247);
+}
+.thali main div button{
+ font-size: 1.1rem;
+ cursor: pointer ;
+ /* width: 20%; */
+ /* margin: auto; */
+}
+.thali main div p{
+ font-size: 1.5rem;
+ 
+}
+.thali main div button:active{
+ background-color: chartreuse;
+}
+.thali main div{
+  margin: 2rem;
+  /* width: 30%; */
+}
+.thali main div img{
+  height: 4rem;
+  border-radius: 100%;
+
+}
+.button{
+    height: 6rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button button{
+    height: 2.1rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: rgb(244, 246, 248);
+    text-align: center;
+    margin: auto;
+}
