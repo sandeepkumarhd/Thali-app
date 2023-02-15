@@ -22,7 +22,7 @@ const YourThali = () => {
   }, 0);
   const conformOrder = () =>{
     alert("Thali booked Succesfully....!!")
-    history.push("/bookedItem")
+    history.push("/succes")
     dispatch(bookedThaliActions.bookedThaliHandeer({totalPrice:rate,totalItem:thaliItems.length}))
   }
   return (

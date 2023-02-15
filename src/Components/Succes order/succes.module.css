@@ -1,0 +1,12 @@
+
+.succes{
+background-image: url("./delivery.jpg");
+background-size: cover;
+height: 100vh;
+}
+.succes h2{
+text-align: center;
+font-size: 3rem;
+font-style: italic;
+}
+

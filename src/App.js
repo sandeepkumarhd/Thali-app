@@ -1,22 +1,29 @@
 import MainHeader from "./Components/MainHeader/MainHeader";
 import Product from "./Components/Items/Product";
 import YourThali from "./Components/Your Thali/YourThali";
-import { Route, BrowserRouter} from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 import Checkout from "./Components/Checkout/Checkout";
-
+import Home from "./Components/MainHeader/Home";
+import SuccesOrder from "./Components/Succes order/succesOrder";
 const App = () => {
   return (
     <div>
       <BrowserRouter>
         <MainHeader />
-        <Route path="/" exact>
-         <Product/>
+        <Route path={"/"} exact>
+          <Home />
+        </Route>
+        <Route path="/product" exact>
+          <Product />
         </Route>
         <Route path="/thali">
           <YourThali />
         </Route>
         <Route path="/bookedItem">
           <Checkout />
+        </Route>
+        <Route path="/succes">
+          <SuccesOrder/>
         </Route>
       </BrowserRouter>
     </div>

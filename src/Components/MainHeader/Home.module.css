@@ -1,0 +1,47 @@
+.home {
+  background-image: url("./food.avif"),
+    linear-gradient(rgba(33, 31, 31, 0.7), rgba(12, 11, 11, 0.8));
+  height: 100vh;
+  background-size: cover;
+}
+.home div{
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+}
+.home div h2{
+    font-size: 3rem;
+   margin-left: 10rem;
+   margin-top: 5rem;
+   color: aliceblue;
+}
+.home div button{
+    padding: 0.7rem 2rem;
+    margin: 1rem;
+    font: optional;
+    font-size: 1.6rem;
+    background-color: yellow;
+    border: none;
+}
+.home div button:hover{
+   background-color:red;
+    cursor: pointer;
+    color: aliceblue;
+}
+span{
+    text-align: center;
+    font-size: 10rem;
+    margin-left: 5rem;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+}
+.home .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .logo h1{
+   font-size: 4rem;
+   margin-left: 5rem;
+}
