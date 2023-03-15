@@ -3,7 +3,7 @@ import Product from "./Components/Items/Product";
 import YourThali from "./Components/Your Thali/YourThali";
 import { Route, BrowserRouter } from "react-router-dom";
 import Checkout from "./Components/Checkout/Checkout";
-import Home from "./Components/MainHeader/Home";
+import HomePage from "./Components/MainHeader/HomePage";
 import SuccesOrder from "./Components/Succes order/succesOrder";
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <BrowserRouter>
         <MainHeader />
         <Route path={"/"} exact>
-          <Home />
+          <HomePage />
         </Route>
         <Route path="/product" exact>
           <Product />
@@ -23,7 +23,7 @@ const App = () => {
           <Checkout />
         </Route>
         <Route path="/succes">
-          <SuccesOrder/>
+          <SuccesOrder />
         </Route>
       </BrowserRouter>
     </div>

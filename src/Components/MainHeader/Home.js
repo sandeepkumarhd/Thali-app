@@ -1,15 +1,14 @@
-import style from "./Home.module.css";
+import style from "./HomePage.module.css";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
-      <div className={style.home}>
+      <div className={style.homepage}>
         <div>
-            <Link to={"/product"}>
+          <Link to={"/product"}>
             <button>Order Now</button>
-            </Link>
-          
+          </Link>
         </div>
         <div className={style.logo}>
           <span>HDCB</span>
@@ -19,4 +18,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default HomePage;
