@@ -1,9 +1,17 @@
 .home {
-  background-image: url("./food.avif"),
+  /* background-image: url("./food.avif"),
     linear-gradient(rgba(33, 31, 31, 0.7), rgba(12, 11, 11, 0.8));
   height: 100vh;
-  background-size: cover;
+  background-size: cover; */
+
+   background-image: linear-gradient(rgba(1, 4, 14, 0.5),
+            rgba(3, 13, 23, 0.4)), url("./food.avif");
+    height: 100vh;
+    background-size: cover;
 }
+
+
+
 .home div{
     display: flex;
     width: 93%;
@@ -44,4 +52,5 @@ span{
 .home .logo h1{
    font-size: 4rem;
    margin-left: 5rem;
+   color: white;
 }
