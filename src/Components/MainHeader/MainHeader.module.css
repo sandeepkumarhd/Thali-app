@@ -19,6 +19,9 @@
   color: rgb(14, 0, 164);
   font-family: Arial, Helvetica, sans-serif;
 }
+p{
+  display: none;
+}
 .header nav ul {
   float: right;
   height: 10vh;
@@ -33,7 +36,65 @@
   margin: auto 3rem;
 }
 
- .header a{
+.header a {
   text-decoration: none;
 }
 
+@media (max-width: 400px) {
+  .header nav ul {
+    font-size: 1.5rem;
+    color: white;
+    margin: auto 3rem;
+    display: flex;
+    align-items: center;
+  }
+  .header nav ul {
+    font-size: 1.5rem;
+    color: white;
+    margin: auto 3rem;
+    display: none;
+    align-items: center;
+  }
+  .header nav h1 {
+    /* padding-left: 2rem; */
+    font-size: 1.9rem;
+    color: rgb(200, 239, 4);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header {
+    height: 10vh;
+    background-color: rgb(106, 89, 123);
+    float: right;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+  }
+  .section{
+    height: 100vh;
+    background-color: blue;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    transition: 0.3s ease-in;
+    transform: translateX(-100%);
+  }
+  .sectionMenu{
+    height: 100vh;
+    background-color: blue;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    transition: 0.3s ease-in;
+    transform: translateX(0%);
+  }
+  p{
+    display: block;
+    font-size: 2rem;
+    color: aliceblue;
+  }
+  a{
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+  }
+}
