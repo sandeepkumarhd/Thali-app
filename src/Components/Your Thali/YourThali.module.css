@@ -1,10 +1,7 @@
 .thali {
-  background-color: rgb(10, 10, 11);
-  width:50%;
-  height: auto;
+  width: 50%;
   display: flex;
-  margin:5vh auto;
-  border-radius: 2rem 0rem 2rem 0rem;
+  margin: 15vh auto;
 }
 .thali main {
   width: 100%;
@@ -12,52 +9,95 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.thali main div{
+.thali main div {
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  background-color: aliceblue;
-  box-shadow:0rem 0rem 0.5rem 0rem rgb(249, 247, 247);
+  background-color: rgb(117, 121, 126);
+  box-shadow: 0rem 0rem 0.5rem 0rem rgb(249, 247, 247);
+  border-radius: 0.4rem;
 }
-.thali main div button{
- font-size: 1.1rem;
- cursor: pointer ;
- /* width: 20%; */
- /* margin: auto; */
+.thali main div button {
+  font-size: 1.1rem;
+  cursor: pointer;
 }
-.thali main div p{
- font-size: 1.5rem;
- 
+.itemsButtons{
+  display: flex;
 }
-.thali main div button:active{
- background-color: chartreuse;
+.thali main div p {
+  font-size: 1.5rem;
 }
-.thali main div{
+.thali main div button:active {
+  background-color: chartreuse;
+}
+.thali main div {
   margin: 2rem;
-  /* width: 30%; */
 }
-.thali main div img{
+.thali main div img {
   height: 4rem;
+  width: 4rem;
+  margin: auto;
   border-radius: 100%;
-
 }
-.button{
-    height: 6rem;
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button {
+  height: 6rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.button button{
-    height: 2.1rem;
-    width: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button button {
+  height: 2.1rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h1{
-    color: rgb(244, 246, 248);
+h1 {
+  color: rgb(1, 18, 34);
+  text-align: center;
+  margin: auto;
+}
+@media (max-width: 425px) {
+  h1 {
+    color: rgb(2, 26, 49);
     text-align: center;
     margin: auto;
+    font-size: 1.2rem;
+  }
+  .thali main div {
+    margin-top: 10vh;
+    height: 25vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(117, 121, 126);
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(249, 247, 247);
+    border-radius: 0.4rem;
+  }
+  .thali main div {
+    margin: 0.5rem;
+  }
+  .thali main div img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    margin: auto;
+  }
+  .button {
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+  }
+  .thali main div p {
+    font-size: 1rem;
+  }
+  .itemsButtons .button{
+    height: 50vh;
+    background-color: blue;
+  }
 }

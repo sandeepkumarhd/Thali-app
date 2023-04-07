@@ -1,4 +1,5 @@
 import MainHeader from "./Components/MainHeader/MainHeader";
+import "./App.css"
 import Product from "./Components/Items/Product";
 import YourThali from "./Components/Your Thali/YourThali";
 import { Route, BrowserRouter } from "react-router-dom";

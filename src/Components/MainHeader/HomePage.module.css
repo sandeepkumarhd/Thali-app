@@ -6,7 +6,6 @@
 }
 
 .homepage div {
-  /* margin-top: 3rem; */
   display: flex;
   width: 93%;
   justify-content: space-between;
@@ -59,7 +58,6 @@ span {
   span {
     text-align: center;
     font-size: 4rem;
-    /* margin-left: 2.7rem; */
     color: white;
     font-style: italic;
     font-weight: bolder;
@@ -99,7 +97,6 @@ span {
   span {
     text-align: center;
     font-size: 4rem;
-    /* margin-left: 2.7rem; */
     color: white;
     font-style: italic;
     font-weight: bolder;

@@ -1,12 +1,11 @@
 import style from "./MainHeader.module.css";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const MainHeader = () => {
-  const [isClicked, setIsClked] = useState(false);
+  const history = useHistory();
   const menuHandler = () => {
-    setIsClked((pre) => !pre);
-    console.log("jhsdcjfhjsd");
+    history.push("/thali");
   };
   return (
     <div>
@@ -15,7 +14,6 @@ const MainHeader = () => {
           <Link to={"/"}>
             <h1>HDCB</h1>
           </Link>
-
           <ul className={""}>
             <NavLink to={"/product"}>
               <li>Products</li>
@@ -23,7 +21,6 @@ const MainHeader = () => {
             <NavLink to={"/thali"}>
               <li>Your Thali</li>
             </NavLink>
-
             <NavLink to={"/bookedItem"}>
               <li>Booked Thali</li>
             </NavLink>
@@ -31,7 +28,6 @@ const MainHeader = () => {
           <i onClick={menuHandler} class="fa-solid fa-cart-shopping"></i>
         </nav>
       </header>
-      <section className={!isClicked ? "section" : "sectionMenu"}></section>
     </div>
   );
 };

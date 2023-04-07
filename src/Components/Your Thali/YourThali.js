@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import { thaliActions } from "../../Redux Store/yourThaliStore";
 import { bookedThaliActions } from "../../Redux Store/BookedThali";
 const YourThali = () => {
-  const history = useHistory()
+  const history = useHistory();
   const dispatch = useDispatch();
   const thaliItems = useSelector((state) => state.thali.thaliItem);
   const incressItemsHandler = (id) => {
@@ -20,11 +20,16 @@ const YourThali = () => {
   const rate = totalPrice.reduce((pre, cur) => {
     return pre + cur;
   }, 0);
-  const conformOrder = () =>{
-    alert("Thali booked Succesfully....!!")
-    history.push("/succes")
-    dispatch(bookedThaliActions.bookedThaliHandeer({totalPrice:rate,totalItem:thaliItems.length}))
-  }
+  const conformOrder = () => {
+    alert("Thali booked Succesfully....!!");
+    history.push("/succes");
+    dispatch(
+      bookedThaliActions.bookedThaliHandeer({
+        totalPrice: rate,
+        totalItem: thaliItems.length,
+      })
+    );
+  };
   return (
     <div className={style.thali}>
       {thaliItems.length > 0 && (
@@ -36,10 +41,14 @@ const YourThali = () => {
                 <p>{product.title}</p>
                 <p>Total Quentity :{product.quentity}</p>
                 <h2>Total Price: {product.totalPrice}</h2>
-                <button onClick={() => removeItemHandler(product.id)}>-</button>
-                <button onClick={() => incressItemsHandler(product.id)}>
-                  +
-                </button>
+                {/* <div className={style.itemsButtons}> */}
+                  <button onClick={() => removeItemHandler(product.id)}>
+                    -
+                  </button>
+                  <button onClick={() => incressItemsHandler(product.id)}>
+                    +
+                  </button>
+                {/* </div> */}
               </div>
             );
           })}
@@ -49,9 +58,7 @@ const YourThali = () => {
           </div>
         </main>
       )}
-      {thaliItems.length <= 0 && (
-        <h1>Frist Add the items.......!!</h1>
-      )}
+      {thaliItems.length <= 0 && <h1>Frist add the items.......!!</h1>}
     </div>
   );
 };
