@@ -19,7 +19,7 @@ const ProductItems = (props) => {
         <Card>
           <img src={props.image} alt="" />
           <h2>{props.title}</h2>
-          <p> ₹ {props.price.toFixed(2)}</p>
+          <h5> ₹ {props.price.toFixed(2)}</h5>
           <button onClick={addToThaliHandler}>Add To Thali</button>
         </Card>
       </div>

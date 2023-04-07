@@ -1,7 +1,9 @@
 
 .product {
     display: flex;
-    margin: 1rem;
+    margin: 2.4rem;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    
 }

@@ -6,7 +6,7 @@ const MainHeader = () => {
   const [isClicked, setIsClked] = useState(false);
   const menuHandler = () => {
     setIsClked((pre) => !pre);
-    console.log("jhsdcjfhjsd")
+    console.log("jhsdcjfhjsd");
   };
   return (
     <div>
@@ -23,23 +23,15 @@ const MainHeader = () => {
             <NavLink to={"/thali"}>
               <li>Your Thali</li>
             </NavLink>
+
             <NavLink to={"/bookedItem"}>
               <li>Booked Thali</li>
             </NavLink>
           </ul>
-          
-          <p><NavLink to={"/thali"}>
-              <li>Your Thali</li>
-            </NavLink></p>
-          <i
-            onClick={menuHandler}
-            className={`fa-solid fa-bars`}
-          ></i>
+          <i onClick={menuHandler} class="fa-solid fa-cart-shopping"></i>
         </nav>
       </header>
-      <section className={!isClicked ? "section" : "sectionMenu"}>
-        
-      </section>
+      <section className={!isClicked ? "section" : "sectionMenu"}></section>
     </div>
   );
 };

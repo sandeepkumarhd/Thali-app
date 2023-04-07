@@ -1,16 +1,21 @@
 .productCard div {
   margin-top: 3rem;
   width: 100%;
-  margin-bottom: -1rem;
+  
+  margin-bottom: 1rem;
   
   /* background-color: blue; */
+}
+h5{
+  font-size: 1.5rem;
+  color: white;
 }
 @media (max-width: 400px) {
   img {
     height: 4rem;
     width: 4rem;
   }
-  p {
+  h5 {
     font-size: 1rem;
   }
   h2 {

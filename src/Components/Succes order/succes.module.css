@@ -1,12 +1,19 @@
 
-.succes{
+/* .succes{
 background-image: url("./delivery.jpg");
 background-size: cover;
 height: 100vh;
-}
+} */
+.succes {
+    background-image: linear-gradient(rgba(1, 4, 14, 0.5), rgba(3, 13, 23, 0.4)),
+      url("./delivery.jpg");
+    height: 100vh;
+    background-size: cover;
+  }
 .succes h2{
 text-align: center;
 font-size: 3rem;
 font-style: italic;
+color: white;
 }
 
