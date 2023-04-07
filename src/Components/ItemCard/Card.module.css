@@ -40,10 +40,10 @@
      font-size: 1.5rem;
      color: white;
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .card img{
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         border-radius: 100%;
         margin-top: 1rem;
         box-shadow: 1px 1px 1px 3px rgba(0,0,0,0.75);
@@ -51,8 +51,8 @@
     .card {
         display: flex;
         flex-direction: column;
-        width: 25%;
-        height: 30vh;
+        width: 15%;
+        height: 25vh;
         justify-content: center;
         align-items: center;
         border-radius: 2rem;
@@ -75,7 +75,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: rgb(15, 8, 8);
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 
 }
 }

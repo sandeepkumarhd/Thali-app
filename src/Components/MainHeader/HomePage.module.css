@@ -48,7 +48,47 @@ span {
   margin-left: 5rem;
   color: white;
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+  .homepage .logo h1 {
+    font-size: 1.4rem;
+    margin-top: 5rem;
+    text-align: center;
+    margin-right: 2.5rem;
+    color: rgb(255, 255, 255);
+  }
+  span {
+    text-align: center;
+    font-size: 4rem;
+    /* margin-left: 2.7rem; */
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+  }
+  .homepage .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .homepage .logo h1 {
+    font-size: 2rem;
+    color: white;
+  }
+  .homepage div button {
+    padding: 0.3rem 1rem;
+    margin: 1rem;
+    font: optional;
+    font-size: 1.2rem;
+    background-color: yellow;
+    border: none;
+  }
+  .homepage div {
+    margin-top: 3rem;
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
   .homepage .logo h1 {
     font-size: 1.4rem;
     margin-top: 5rem;

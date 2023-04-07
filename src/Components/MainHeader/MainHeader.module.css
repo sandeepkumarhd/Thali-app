@@ -48,7 +48,7 @@ i{
   transform:translateX(-100%);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .header nav ul {
     font-size: 1.5rem;
     color: white;
@@ -64,7 +64,6 @@ i{
     align-items: center;
   }
   .header nav h1 {
-    /* padding-left: 2rem; */
     font-size: 1.9rem;
     color: rgb(200, 239, 4);
     font-family: Arial, Helvetica, sans-serif;
@@ -110,6 +109,6 @@ i{
     margin-right: 3rem;
     color: white;
     margin-top: 1rem;
-    transform:translateX(700%);
+    transform:translateX(800%);
   }
 }
